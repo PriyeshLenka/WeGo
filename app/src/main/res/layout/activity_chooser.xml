@@ -15,7 +15,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="340dp"
         android:layout_marginEnd="170dp"
-        android:text="Button" />
+        android:text="Login" />
 
     <Button
         android:id="@+id/button4"
@@ -25,7 +25,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="170dp"
         android:layout_marginBottom="130dp"
-        android:text="Button" />
+        android:text="Login" />
 
     <ImageView
         android:layout_width="200dp"
