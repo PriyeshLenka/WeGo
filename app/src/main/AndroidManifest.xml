@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeGo">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
+            android:name=".EnterOtp"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateOTP"
+            android:exported="false" />
         <activity
             android:name=".ChooserActivity"
             android:exported="true" />
@@ -26,7 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
