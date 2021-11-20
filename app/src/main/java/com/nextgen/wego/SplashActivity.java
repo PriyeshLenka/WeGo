@@ -24,12 +24,13 @@ public class SplashActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally {
-                    Intent intent=new Intent(SplashActivity.this,GenerateOTP.class);
+                    Intent intent=new Intent(SplashActivity.this,ChooserActivity.class);
                     startActivity(intent);
                     finish();
                 }
             }
 
         };td.start();
+
     }
 }
