@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GenerateOTP">
+    tools:context=".GenerateOTP"
+    android:background="@color/white">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
                 android:textSize="25sp"
                 android:textColor="@color/black"/>
             <TextView
+                android:textColor="#808080"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/otp"
@@ -46,11 +48,13 @@
                 android:textSize="10dp"
                 android:inputType="phone"/>
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/GenerateOTP"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/primary"
+                android:textColor="@color/black"
                 android:text="Generate OTP"/>
 
         </LinearLayout>
