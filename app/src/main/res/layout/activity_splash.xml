@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:id="@+id/bike_animation"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
-
+        android:layout_centerInParent="true"
         android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,60 +21,49 @@
         app:lottie_loop="false"
         app:lottie_rawRes="@raw/bike" />
 
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/e_animation"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.470"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="false"
-        app:lottie_rawRes="@raw/e_animation" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/w_animation"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.320"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="false"
-        app:lottie_rawRes="@raw/w_animation" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/go_animation"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.686"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="false"
-        app:lottie_rawRes="@raw/go_animation" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="542dp" />
+        android:layout_below="@id/bike_animation"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-117dp"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/w_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_below="@id/bike_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/w_animation" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/e_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-55dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/e_animation" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/go_animation"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="-50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/go_animation" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="542dp" />
+    </LinearLayout>
     /FFD6A6A6
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
