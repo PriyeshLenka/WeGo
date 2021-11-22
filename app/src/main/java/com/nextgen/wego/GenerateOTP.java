@@ -23,6 +23,6 @@ public class GenerateOTP extends AppCompatActivity {
                 startActivity(new Intent(GenerateOTP.this, EnterOtp.class));
             }
         });
-        finish();
+
     }
 }
