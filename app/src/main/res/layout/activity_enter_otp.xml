@@ -48,7 +48,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter otp"
+                android:hint="   Enter otp"
                 android:background="@drawable/background" />
 
             <androidx.appcompat.widget.AppCompatButton
