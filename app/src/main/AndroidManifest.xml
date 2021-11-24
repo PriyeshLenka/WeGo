@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeGo">
+      
+        <activity
+            android:name=".CustomerDetail"
+            android:exported="false" />
+      
         <activity
             android:name=".IntroActivity"
             android:exported="true" />
+
         <activity
             android:name=".ChooserActivity"
             android:exported="false" />
