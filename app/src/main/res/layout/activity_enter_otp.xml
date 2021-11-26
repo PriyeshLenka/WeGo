@@ -61,13 +61,15 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enterotp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@color/primary"
                 android:text="Verify"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:onClick="EnterOtp"/>
 
         </LinearLayout>
     </RelativeLayout>
