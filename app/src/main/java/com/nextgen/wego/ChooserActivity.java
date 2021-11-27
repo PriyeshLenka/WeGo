@@ -16,7 +16,7 @@ public class ChooserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chooser);
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();
         sharedPreferences1 = getSharedPreferences("WeGoLogin", MODE_PRIVATE);
         ServiceProvider = findViewById(R.id.service_login_page);
         ServiceProvider.setOnClickListener(new View.OnClickListener() {

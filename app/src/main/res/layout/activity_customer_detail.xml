@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomerDetail"
-    android:background="@color/white">
+    tools:context=".CustomerDetail">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:layout_centerVertical="true">
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -19,52 +17,36 @@
             android:text="@string/detail"
             android:gravity="center"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:textColor="@color/black"/>
+            android:textSize="30sp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/background"
-            android:textColor="@color/black"
             android:hint="full name"
-            android:textColorHint="@color/grey"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:inputType="text"
             android:padding="5dp"
-            android:layout_margin="5dp"
-         />
+            android:layout_margin="5dp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/background"
             android:hint="phone number"
-            android:textColorHint="@color/grey"
-            android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:inputType="phone"
             android:maxLength="10"
             android:layout_margin="5dp"
             android:padding="5dp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textColorHint="@color/grey"
+            android:layout_height="wrap_content"
             android:background="@drawable/background"
-            android:hint="email id"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:inputType="textEmailAddress"
+            android:hint="phone number"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:maxLength="10"
             android:layout_margin="5dp"
-            android:padding="5dp"
-           />
-       <androidx.appcompat.widget.AppCompatButton
-           android:layout_width="250dp"
-           android:layout_height="50dp"
-           android:layout_gravity="center"
-           android:background="@color/primary"
-           android:layout_margin="10dp"
-           android:text="submit"
-           android:textColor="@color/black"/>
+            android:padding="5dp"/>
 
     </LinearLayout>
 
