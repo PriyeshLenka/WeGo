@@ -14,7 +14,7 @@ public class GenerateOTP extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generate_otp);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         Button generateOTP = (Button)findViewById(R.id.GenerateOTP);
 
         generateOTP.setOnClickListener(new View.OnClickListener() {

@@ -1,15 +1,13 @@
 package com.nextgen.wego;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class CustomerDetail extends AppCompatActivity {
+public class UploadDocuments extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_detail);
-
+        setContentView(R.layout.activity_upload_documents);
     }
 }
