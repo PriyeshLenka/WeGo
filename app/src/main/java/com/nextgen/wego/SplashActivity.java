@@ -10,8 +10,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import java.util.ResourceBundle;
+
 public class SplashActivity extends AppCompatActivity {
     SharedPreferences onBoardingScreen;
+    SharedPreferences sharedPreferences1;
     ImageView splashImage;
     Animation sideAnim;
     private static int SPLASH_SCREEN = 3600;
@@ -23,6 +26,7 @@ public class SplashActivity extends AppCompatActivity {
         // getSupportActionBar().hide();
 
         splashImage = findViewById(R.id.splashImage);
+        sharedPreferences1 = getSharedPreferences("WeGoLogin", MODE_PRIVATE);
 
         //Animation
         sideAnim = AnimationUtils.loadAnimation(this, R.anim.side_anim);
@@ -62,6 +66,13 @@ public class SplashActivity extends AppCompatActivity {
                     Intent intent = new Intent(SplashActivity.this, OnBoarding.class);
                     startActivity(intent);
                     finish();
+                }
+                else   if (sharedPreferences1.getString("profile", "").contentEquals("sp") || sharedPreferences1.getString("profile", "").contentEquals("cp")) {
+                    Intent intent = new Intent(SplashActivity.this, GenerateOTP.class);
+                    startActivity(intent);
+                    finish();
+
+
                 }
                 else{
                     Intent intent = new Intent(SplashActivity.this, ChooserActivity.class);
