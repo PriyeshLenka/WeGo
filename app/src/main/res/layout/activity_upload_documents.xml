@@ -7,4 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".UploadDocuments">
 
+  <TextView
+      android:id="@+id/heading"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/upload"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:textSize="30sp"
+      android:textColor="@color/black"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_below="@id/heading"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="30dp">
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/add_image"
+        android:foreground="@drawable/background"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload photo"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/add_image"
+        android:foreground="@drawable/background"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload AdharCard"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/add_image"
+        android:foreground="@drawable/background"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload Driving licence"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+  </LinearLayout>
+  </ScrollView>
+
   </RelativeLayout>

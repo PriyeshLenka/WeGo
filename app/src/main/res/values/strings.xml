@@ -3,6 +3,8 @@
     <string name="otp">We will send you a one time password in your phone number</string>
     <string name="getotp">you will get OTP via SMS</string>
     <string name="detail">Customer Detail</string>
+    <string name="upload">Upload Documents</string>
+
 
     <!-- Strings for On Boarding Screen -->
 
