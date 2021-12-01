@@ -3,24 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/drawable/background.xml" value="0.20462962962962963" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_chooser.xml" value="0.1" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_customer_detail.xml" value="0.1431159420289855" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_enter_otp.xml" value="0.1" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_generate_otp.xml" value="0.1" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/GOURAV kumar/AndroidStudioProjects/WeGoBranch2/app/src/main/res/layout/activity_upload_documents.xml" value="0.17844202898550723" />
         <entry key="..\:/Users/PRIYESH/AndroidStudioProjects/WeGo/app/src/main/res/layout/activity_chooser.xml" value="0.2" />
         <entry key="..\:/Users/PRIYESH/AndroidStudioProjects/WeGo/app/src/main/res/layout/activity_splash.xml" value="0.16111111111111112" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.2601851851851852" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_chooser.xml" value="0.1" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_enter_otp.xml" value="0.264" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_generate_otp.xml" value="0.4" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_intro.xml" value="0.21014492753623187" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_login.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/activity_splash.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch1/app/src/main/res/layout/layout_screen.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/background.xml" value="0.2703125" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/circular.xml" value="0.2703125" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_chooser.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_customer_detail.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_enter_otp.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_generate_otp.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_intro.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_login.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_upload_documents.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/layout_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/slide_layout.xml" value="0.264" />
       </map>
     </option>
   </component>
