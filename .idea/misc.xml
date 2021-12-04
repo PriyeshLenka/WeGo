@@ -5,23 +5,19 @@
       <map>
         <entry key="..\:/Users/PRIYESH/AndroidStudioProjects/WeGo/app/src/main/res/layout/activity_chooser.xml" value="0.2" />
         <entry key="..\:/Users/PRIYESH/AndroidStudioProjects/WeGo/app/src/main/res/layout/activity_splash.xml" value="0.16111111111111112" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/background.xml" value="0.2703125" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/circular.xml" value="0.2703125" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.2703125" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_chooser.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_customer_detail.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_enter_otp.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_generate_otp.xml" value="0.1" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_intro.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_login.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_splash.xml" value="0.264" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/activity_upload_documents.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/layout_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo_Branch-1/app/src/main/res/layout/slide_layout.xml" value="0.264" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/drawable/help_support_icon.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/drawable/home_icon.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/drawable/profile_icon.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/drawable/round_corners.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/drawable/trip_icon.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/activity_dash_board.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/fragment_help_support.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/fragment_trip.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/layout/slide_layout.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYESH/StudioProjects/WeGo-Branch_1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
       </map>
     </option>
   </component>
