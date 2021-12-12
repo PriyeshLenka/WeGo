@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,6 +28,8 @@ public class EnterOtp extends AppCompatActivity {
     PinView pin;
     String otpbackend,Enteredotp;
     EditText phone_no;
+    private static final String KEY_VERIFICATION_ID = "key_verification_id";
+
 
 
     @Override
@@ -40,7 +44,16 @@ public class EnterOtp extends AppCompatActivity {
         phone_no.setText(getName);
         otpbackend = getIntent().getStringExtra("otp");
         Enteredotp=pin.getText().toString();
+        Button eotp = findViewById(R.id.enterotp);
 
+        eotp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(otpbackend == null && savedInstanceState!=null)
+                    onRestoreInstanceState(savedInstanceState);
+                EnterOtp(view);
+            }
+        });
 
 
 
@@ -48,24 +61,23 @@ public class EnterOtp extends AppCompatActivity {
 
 
     public void EnterOtp(View view) {
-        Toast.makeText(EnterOtp.this, pin.getClipBounds().toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(EnterOtp.this, pin.getText().toString(), Toast.LENGTH_SHORT).show();
+
         if (!pin.getText().toString().trim().isEmpty()) {
            if(otpbackend!=null){
-               PhoneAuthCredential phoneAuthCredential=PhoneAuthProvider.getCredential(otpbackend,Enteredotp);
-               FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                   @Override
-                   public void onComplete(@NonNull Task<AuthResult> task) {
-                       if(task.isSuccessful()){
-                           Intent intent=new Intent(EnterOtp.this, UploadDocuments.class);
-                           intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                           startActivity(intent);
-                       }
-                       else{
-                           Toast.makeText(EnterOtp.this, "Enter correct opr", Toast.LENGTH_SHORT).show();
-                       }
+
+
+                   try {
+                       PhoneAuthCredential phoneAuthCredential=PhoneAuthProvider.getCredential(otpbackend,Enteredotp);
+                       signInWithPhoneAuthCredential(phoneAuthCredential);
+                   }catch (Exception e){
+                       Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
 
                    }
-               });
+
+
+
+
 
            }
            else{
@@ -76,5 +88,36 @@ public class EnterOtp extends AppCompatActivity {
         else{
             Toast.makeText(EnterOtp.this, "Enter code", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void signInWithPhoneAuthCredential(PhoneAuthCredential phoneAuthCredential) {
+        FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Toast.makeText(EnterOtp.this, "complete", Toast.LENGTH_SHORT).show();
+                        Log.d("Complete log", "onComplete: Complete");
+                        if(task.isSuccessful()){
+                           Intent intent=new Intent(EnterOtp.this, UploadDocuments.class);
+                           intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                           startActivity(intent);
+                            Toast.makeText(EnterOtp.this, "verified", Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            Toast.makeText(EnterOtp.this, "Enter correct oto", Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(KEY_VERIFICATION_ID,otpbackend);
+    }
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        otpbackend = savedInstanceState.getString(KEY_VERIFICATION_ID);
     }
 }

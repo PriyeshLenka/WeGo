@@ -18,6 +18,8 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.concurrent.TimeUnit;
 
 public class GenerateOTP extends AppCompatActivity {
+    private  static  String vid;
+    private static final String KEY_VERIFICATION_ID = "key_verification_id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +52,13 @@ public class GenerateOTP extends AppCompatActivity {
                                 @Override
                                 public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                                     super.onCodeSent(s, forceResendingToken);
+                                    vid = s;
                                     Intent intent=new Intent(GenerateOTP.this, EnterOtp.class);
                                     intent.putExtra("phone_no",phone.getText().toString());
-                                    intent.putExtra("otp",s);
+                                    if (s == null && savedInstanceState != null) {
+                                        onRestoreInstanceState(savedInstanceState);
+                                    }
+                                    intent.putExtra("otp",vid);
                                     startActivity(intent);
                                 }
                             }
@@ -72,5 +78,14 @@ public class GenerateOTP extends AppCompatActivity {
 //                startActivity(new Intent(GenerateOTP.this, EnterOtp.class));
         });
 
+    }
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(KEY_VERIFICATION_ID,vid);
+    }
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        vid = savedInstanceState.getString(KEY_VERIFICATION_ID);
     }
 }
