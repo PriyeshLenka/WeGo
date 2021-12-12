@@ -68,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
                     finish();
                 }
                 else   if (sharedPreferences1.getString("profile", "").contentEquals("sp") || sharedPreferences1.getString("profile", "").contentEquals("cp")) {
-                    Intent intent = new Intent(SplashActivity.this, GenerateOTP.class);
+                    Intent intent = new Intent(SplashActivity.this, DashBoardActivity.class);//GenerateOTP
                     startActivity(intent);
                     finish();
 
