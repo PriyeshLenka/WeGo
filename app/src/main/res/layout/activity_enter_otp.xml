@@ -91,7 +91,7 @@
                 android:background="@color/primary"
                 android:text="Verify"
                 android:textColor="@color/black"
-                android:onClick="EnterOtp"/>
+                />
 
         </LinearLayout>
     </RelativeLayout>
