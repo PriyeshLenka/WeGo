@@ -43,21 +43,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
                 android:text="@string/getotp"
                 android:textAlignment="center"
                 android:textColor="#808080" />
-
             <EditText
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@drawable/background"
-                android:hint="Enter otp"
-                android:textColorHint="#656565"
-                android:padding="10dp"
+                android:id="@+id/phone_no"
+                android:layout_width="wrap_content"
+                android:textColor="@color/grey"
                 android:textSize="15dp"
+                android:layout_height="wrap_content"
+                />
+
+            <com.chaos.view.PinView
+                android:id="@+id/firstPinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="Hint."
                 android:inputType="number"
-                android:textColor="#656565"/>
+
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/black"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="48dp"
+                app:lineColor="@color/black"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
 
 
             <androidx.appcompat.widget.AppCompatButton
@@ -69,7 +91,7 @@
                 android:background="@color/primary"
                 android:text="Verify"
                 android:textColor="@color/black"
-                android:onClick="EnterOtp"/>
+                />
 
         </LinearLayout>
     </RelativeLayout>

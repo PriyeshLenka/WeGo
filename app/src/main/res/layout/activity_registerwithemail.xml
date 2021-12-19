@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GenerateOTP"
-    android:background="@color/white">
+    tools:context=".Registerwithemail">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+       android:layout_centerInParent="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         >
@@ -22,19 +22,12 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/customer_login_page"
-                android:layout_width="187dp"
-                android:layout_height="200dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/login" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="VERIFICATION"
+                android:text="Register with email"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -43,33 +36,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="@string/otp"
+                android:text="Enter your Email and Password for Register"
                 android:textAlignment="center"
                 android:textColor="#808080" />
 
             <EditText
-                android:id="@+id/phone"
+                android:id="@+id/email"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:background="@drawable/background"
-                android:hint="Mobile number"
-                android:inputType="phone"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
 
+                android:padding="10dp"
+                android:textColor="#656565"
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:textColor="#656565"
                 android:textColorHint="@color/grey"
                 android:textSize="15dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/GenerateOTP"
+                android:id="@+id/registerbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@color/primary"
-                android:text="Generate OTP"
+                android:text="Register"
                 android:textColor="@color/black" />
 
         </LinearLayout>
     </RelativeLayout>
+
 </RelativeLayout>
