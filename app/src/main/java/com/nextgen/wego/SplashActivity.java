@@ -10,8 +10,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import java.util.ResourceBundle;
-
 public class SplashActivity extends AppCompatActivity {
     SharedPreferences onBoardingScreen;
     SharedPreferences sharedPreferences1;
@@ -68,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
                     finish();
                 }
                 else   if (sharedPreferences1.getString("profile", "").contentEquals("sp") || sharedPreferences1.getString("profile", "").contentEquals("cp")) {
-                    Intent intent = new Intent(SplashActivity.this, DashBoardActivity.class);//GenerateOTP
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);//GenerateOTP
                     startActivity(intent);
                     finish();
 
